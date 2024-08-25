@@ -1,0 +1,21 @@
+@import "../animations.scss";
+
+.body {
+  height: 95%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.7s, transform 0.7s;
+
+  &.enter {
+    animation: fadeInScaleUp 0.7s;
+  }
+
+  &.exit {
+    animation: fadeOutScaleDown 0.7s;
+  }
+}

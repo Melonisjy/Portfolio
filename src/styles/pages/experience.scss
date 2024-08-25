@@ -1,0 +1,73 @@
+.experience {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding-left: 420px;
+
+    height: 100%;
+    width: 90%;
+    color: $font-color;
+
+    &-education {
+      &-title {
+        font-size: 38px;
+        color: $font-highlight;
+        letter-spacing: -1.5px;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        letter-spacing: -1px;
+        &-info {
+          font-weight: 300;
+          line-height: 0.4;
+          &-academy {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 7px;
+            gap: 8px;
+          }
+        }
+      }
+    }
+    &-work {
+      &-title {
+        font-size: 38px;
+        color: $font-highlight;
+        letter-spacing: -1.5px;
+        margin-bottom: 40px;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        letter-spacing: -1px;
+
+        &-info {
+          font-weight: 300;
+          line-height: 0.4;
+          &-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 7px;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}

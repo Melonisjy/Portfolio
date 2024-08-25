@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  height: 5%;
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+
+  &-menu {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+
+    gap: 40px;
+
+    &-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: 100%;
+      letter-spacing: 2.5px;
+
+      &.active {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+      }
+
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.15) skew(-10deg);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.canvas {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: calc(100vh * 4);
+
+  background-color: $background-color;
+
+  overflow: hidden;
+}

@@ -1,0 +1,48 @@
+.project {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    height: 100%;
+    width: 80%;
+    color: $font-color;
+
+    &-project {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      &-title {
+        font-size: 32px;
+        color: $font-highlight;
+        letter-spacing: 1.5px;
+        display: flex;
+        justify-content: center;
+      }
+
+      &-image {
+        width: 100%;
+        max-width: 400px;
+        height: 40%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        display: block;
+
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}

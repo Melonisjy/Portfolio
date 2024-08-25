@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  -ms-overflow-style: none;
+}
+
+a {
+  color: #ebd3f8;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 80%;
+    transition-duration: 0.2s;
+  }
+}
+
+p {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 24px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+// variables
+@import "./variables.scss";
+
+// layout style sheet
+@import "./layout/index.scss"; // canvas
+@import "./layout/header.scss";
+@import "./layout/body.scss";
+
+// page style sheet
+@import "./pages/aboutme.scss";
+@import "./pages/experience.scss";
+@import "./pages/contact.scss";
+@import "./pages/projects.scss";
+
+// component style sheet
+@import "./components/modal.scss";

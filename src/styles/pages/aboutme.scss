@@ -1,0 +1,68 @@
+.aboutme {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-section {
+    display: flex;
+    justify-content: center;
+    color: $font-color;
+
+    width: 90%;
+    height: 100%;
+    &-left {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+
+      padding-left: 200px;
+      font-weight: 200;
+
+      &-title {
+        font-size: 60px;
+        letter-spacing: -4.5px;
+        color: $font-highlight;
+        font-weight: 700;
+      }
+
+      &-description {
+        letter-spacing: -1.5px;
+        line-height: 2;
+
+        &-highlight {
+          color: $font-highlight;
+        }
+
+        &-headline {
+          letter-spacing: -1px;
+          line-height: 3.5;
+          font-size: 1.5em;
+          font-weight: 500;
+        }
+      }
+
+      &-skills {
+        &-headline {
+          letter-spacing: 1px;
+          line-height: 1;
+          font-size: 1.5em;
+          font-weight: 500;
+        }
+
+        &-items {
+          letter-spacing: 1px;
+          font-size: 20px;
+        }
+      }
+    }
+    &-right {
+      width: 40%;
+    }
+  }
+}
