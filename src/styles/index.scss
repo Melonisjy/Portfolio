@@ -1,6 +1,7 @@
 body {
   margin: 0;
   -ms-overflow-style: none;
+  font-family: "ChosunGu";
 }
 
 a {
@@ -26,6 +27,12 @@ h3 {
 ::-webkit-scrollbar {
   display: none;
 }
+// font
+@font-face {
+  font-family: "ChosunGu";
+  src: url("../fonts/ChosunGu.ttf");
+}
+
 // variables
 @import "./variables.scss";
 
