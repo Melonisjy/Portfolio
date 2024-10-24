@@ -4,6 +4,8 @@ import TYPESCRIPT from "../assets/icons/typescript.png";
 import REACT from "../assets/icons/react.png";
 import SASS from "../assets/icons/sass.png";
 import TAILWIND from "../assets/icons/tailwindcss.png";
+
+// react
 import { useState } from "react";
 
 const AboutMe = () => {
@@ -65,6 +67,7 @@ const AboutMe = () => {
             </div>
           </div>
         </section>
+        <section className="aboutme-section-right"></section>
       </div>
     </div>
   );
