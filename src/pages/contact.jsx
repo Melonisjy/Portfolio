@@ -29,7 +29,7 @@ const Contact = () => {
         </section>
         <section className="contact-section-item">
           <SiGmail size={30} />
-          <a href="mailto:yangah.career@gmail.com">dhy2458@gmail.com</a>
+          <a href="mailto:dhy2458@gmail.com">dhy2458@gmail.com</a>
         </section>
       </div>
     </div>
