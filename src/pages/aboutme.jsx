@@ -1,35 +1,69 @@
-import CODE from "../assets/code-icon.png";
+// icons
+import JAVASCRIPT from "../assets/icons/javascript.png";
+import TYPESCRIPT from "../assets/icons/typescript.png";
+import REACT from "../assets/icons/react.png";
+import SASS from "../assets/icons/sass.png";
+import TAILWIND from "../assets/icons/tailwindcss.png";
+import { useState } from "react";
 
 const AboutMe = () => {
+  const [isHover, setIsHover] = useState(false);
   return (
     <div className="aboutme">
       <div className="aboutme-section">
         <section className="aboutme-section-left">
-          <h1 className="aboutme-section-left-title">{`Frontend Engineer.`}</h1>
+          <h1 className="aboutme-section-left-title">
+            안녕하세요, 개발자 이주열입니다 👋
+          </h1>
           <p className="aboutme-section-left-description">
-            <span className="aboutme-section-left-description-headline">
-              안녕하세요, 1년차 프론트엔드 개발자 이주열 입니다.
+            <span className="hover-effect">
+              저는 상명대학교 정보통신공학과를 졸업하였고 블록체인 기술에 흥미를
+              느껴,
             </span>
             <br />
-            문제를 해결할 때는 먼저 스스로 고민하고, 그 후 팀원들과 함께 최선의
-            방법을 찾습니다.
+            <span className="hover-effect">
+              블록체인 부트캠프에서 블록체인과 웹 프론트엔드 개발에 대한 지식을
+              쌓았습니다.
+            </span>
             <br />
-            또한 항상 사용자의 입장에서 더 나은 경험을 만들기 위해 노력합니다.
-            <br />
-            블록체인 기술에 큰 관심을 가지고 있으며, 앞으로 이 분야에서 계속
-            성장하고 싶습니다.
-            <br />
-            최근엔 Go 언어로 백엔드 개발을 하기 위해 학습하고 있습니다.
+            <span className="hover-effect">
+              현재는 프론트엔드 개발자로써 커리어를 쌓아나가고 있습니다.
+            </span>
           </p>
           <div className="aboutme-section-left-skills">
-            <h2 className="aboutme-section-left-skills-headline">Skills</h2>
-            <span className="aboutme-section-left-skills-items">
-              Javascript, React, HTML & CSS, SCSS, Tailwind CSS, Git
-            </span>
+            <div
+              className="aboutme-section-left-skills-box"
+              onMouseEnter={() => setIsHover(true)}
+              onMouseLeave={() => setIsHover(false)}
+            >
+              <div
+                className={`aboutme-section-left-skills-box-items ${
+                  isHover && "stop__animation"
+                }`}
+              >
+                <p>
+                  <img
+                    src={JAVASCRIPT}
+                    alt="js"
+                    width="30px"
+                    style={{ borderRadius: "4px" }}
+                  />
+                </p>
+                <p>
+                  <img src={TYPESCRIPT} alt="ts" width="30px" />
+                </p>
+                <p>
+                  <img src={REACT} alt="react" width="30px" />
+                </p>
+                <p>
+                  <img src={SASS} alt="sass" width="30px" />
+                </p>
+                <p>
+                  <img src={TAILWIND} alt="tailwind" width="30px" />
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-        <section className="aboutme-section-right">
-          <img src={CODE} alt="developer" style={{ width: "350px" }} />
         </section>
       </div>
     </div>
