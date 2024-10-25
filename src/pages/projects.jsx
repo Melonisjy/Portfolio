@@ -39,12 +39,11 @@ const Projects = ({ setIsModalOpen }) => {
   const renderProject = () => {
     return PROJECTS.map((project, i) => (
       <div className="project-section-project" key={i}>
-        <div className="project-section-project-title">{project.title}</div>
         <img
           src={project.imageSrc}
           alt={project.imageAlt}
           className="project-section-project-image"
-          data-tooltip-content="click to see more"
+          data-tooltip-content="클릭해서 자세히 보기"
           data-tooltip-id="tooltip"
           onClick={() => openModal(project)}
         />
@@ -58,7 +57,7 @@ const Projects = ({ setIsModalOpen }) => {
         {renderProject()}
         <Tooltip
           id="tooltip"
-          style={{ backgroundColor: "#AD49E1", color: "white" }}
+          style={{ backgroundColor: "transparent", color: "#fafafa" }}
           place="bottom"
           arrowColor="transparent"
         />
