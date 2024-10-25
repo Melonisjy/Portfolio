@@ -61,7 +61,7 @@ const Projects = ({ setIsModalOpen }) => {
           src={project.imageSrc}
           alt={project.imageAlt}
           className="project-section-project-image"
-          data-tooltip-content="클릭해서 자세히 보기"
+          data-tooltip-content={!isMobile ? "클릭해서 자세히 보기" : ""}
           data-tooltip-id="tooltip"
           onClick={() => openModal(project)}
         />
