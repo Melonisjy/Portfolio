@@ -1,3 +1,5 @@
+@import "../mixin";
+
 .header {
   position: fixed;
   height: 5%;
@@ -9,7 +11,6 @@
   padding-top: 5%;
 
   &-menu {
-    width: 25%;
     display: flex;
     justify-content: space-between;
 
@@ -35,6 +36,16 @@
       &:hover {
         transform: scale(1.1) skew(-10deg);
       }
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    font-size: 12px;
+
+    &-menu {
+      gap: 20px;
     }
   }
 }
