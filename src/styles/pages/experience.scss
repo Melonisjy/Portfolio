@@ -115,12 +115,17 @@
 }
 
 @include mobile {
-  .experience-section-work-title {
-    font-size: 34px;
+  .experience {
+    height: auto;
+
+    &-section-work-title {
+      font-size: 34px;
+    }
+    &-section-education-title {
+      font-size: 34px;
+    }
   }
-  .experience-section-education-title {
-    font-size: 34px;
-  }
+
   .hover-effect {
     &.title {
       font-size: 18px;
