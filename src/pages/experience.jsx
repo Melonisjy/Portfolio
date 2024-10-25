@@ -28,7 +28,8 @@ const Experience = () => {
             <div className="experience-section-work-item-info">
               <div className="experience-section-work-item-info-link">
                 <div className="hover-effect title">
-                  JEFF World / Frontend Engineer
+                  <div className="hover-effect title-focus">JEFF World</div> /
+                  Frontend Engineer
                 </div>
                 <a
                   href="https://jeffworld.io/"
