@@ -21,9 +21,10 @@
       &-title {
         font-size: 48px;
         background: linear-gradient(270deg, rgb(254, 203, 126), #ffffff);
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-shadow: 3px 3px 6px rgba(254, 203, 126, 0.8);
+        text-shadow: 3px 3px 16px rgba(254, 203, 126, 0.8);
         user-select: none;
       }
 
@@ -47,9 +48,10 @@
       &-title {
         font-size: 48px;
         background: linear-gradient(270deg, rgb(254, 203, 126), #ffffff);
+        background-clip: initial;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-shadow: 3px 3px 6px rgba(254, 203, 126, 0.8);
+        text-shadow: 3px 3px 16px rgba(254, 203, 126, 0.8);
         user-select: none;
       }
 
@@ -86,6 +88,14 @@
 
   &.title {
     font-size: 24px;
+
+    &-focus {
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 3s ease-in-out infinite alternate;
+      -moz-animation: glow 3s ease-in-out infinite alternate;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
   }
 
   &.link {
