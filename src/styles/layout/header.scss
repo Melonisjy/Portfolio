@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
 
-    color: white;
+    color: #fafafa;
 
     gap: 40px;
 
@@ -24,17 +24,16 @@
       width: fit-content;
       height: 100%;
       letter-spacing: 2.5px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
 
       &.active {
         text-decoration: underline;
         text-underline-offset: 10px;
       }
 
-      cursor: pointer;
-
       &:hover {
-        transform: scale(1.15) skew(-10deg);
-        transition: transform 0.3s ease;
+        transform: scale(1.1) skew(-10deg);
       }
     }
   }
