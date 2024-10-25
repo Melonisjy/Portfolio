@@ -14,6 +14,7 @@ const Projects = ({ setIsModalOpen }) => {
   const modalRef = useRef();
   const [isModal, setIsModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (isModal) {
@@ -22,6 +23,23 @@ const Projects = ({ setIsModalOpen }) => {
       document.body.style.overflow = "unset";
     }
   }, [isModal]);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -47,6 +65,9 @@ const Projects = ({ setIsModalOpen }) => {
           data-tooltip-id="tooltip"
           onClick={() => openModal(project)}
         />
+        {isMobile && (
+          <div className="mobile__description">클릭해서 자세히 보기</div>
+        )}
       </div>
     ));
   };
