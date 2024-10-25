@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa";
 import { SiVelog } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
+import { FaMedium } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -25,6 +26,16 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             https://velog.io/@meloncoder
+          </a>
+        </section>
+        <section className="contact-section-item">
+          <FaMedium size={30} />
+          <a
+            href="https://medium.com/@dhy2458"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://medium.com/@dhy2458
           </a>
         </section>
         <section className="contact-section-item">
