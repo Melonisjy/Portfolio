@@ -1,3 +1,5 @@
+@import "../mixin";
+
 .experience {
   width: 100%;
   height: 50%;
@@ -11,10 +13,8 @@
     flex-direction: column;
     gap: 20px;
 
-    padding-left: 420px;
-
     height: 100%;
-    width: 90%;
+    width: 60%;
     color: $font-color;
 
     &-education {
@@ -112,4 +112,24 @@
 
 .hover-effect:hover {
   background-position: 0%;
+}
+
+@include mobile {
+  .experience-section-work-title {
+    font-size: 34px;
+  }
+  .experience-section-education-title {
+    font-size: 34px;
+  }
+  .hover-effect {
+    &.title {
+      font-size: 18px;
+      &-focus {
+        font-size: 18px;
+      }
+    }
+    &.link {
+      font-size: 12px;
+    }
+  }
 }
