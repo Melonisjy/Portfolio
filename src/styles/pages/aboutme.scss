@@ -119,15 +119,15 @@
   .aboutme-section {
     &-title {
       font-size: 28px;
-      // text-wrap: pretty;
     }
 
     &-skills {
       height: 100%;
       &-box {
         height: 50px;
-        &-items {
-          animation: flowText 8s linear infinite;
+
+        &-items p {
+          margin: 8px;
         }
       }
     }
