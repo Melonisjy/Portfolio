@@ -114,6 +114,10 @@
   background-position: 0%;
 }
 
+.mobile__description {
+  font-size: 8px;
+}
+
 @include mobile {
   .experience {
     height: auto;
