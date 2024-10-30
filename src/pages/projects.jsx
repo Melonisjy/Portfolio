@@ -10,11 +10,17 @@ import Modal from "../components/modal";
 // constant
 import { PROJECTS } from "../constant/project";
 
+// global variable
+import { useWindowSize } from "../store/useWindowSize";
+
 const Projects = ({ setIsModalOpen }) => {
-  const modalRef = useRef();
+  // state
+  const { isMobile } = useWindowSize();
+
   const [isModal, setIsModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
+
+  const modalRef = useRef();
 
   useEffect(() => {
     if (isModal) {
@@ -23,23 +29,6 @@ const Projects = ({ setIsModalOpen }) => {
       document.body.style.overflow = "unset";
     }
   }, [isModal]);
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const handleResize = () => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
 
   const openModal = (project) => {
     setSelectedProject(project);
