@@ -39,7 +39,7 @@ const Experience = () => {
                   <div className="hover-effect link">[JEFF World Website]</div>
                 </a>
               </div>
-              <p className="hover-effect">2023.08 - Current</p>
+              <p className="hover-effect">2023.08 - 2024.11</p>
             </div>
           </div>
         </section>
